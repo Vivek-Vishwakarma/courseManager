@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Course Management Stystem</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Course Management Stystem</h2>
+    </div>
+    <div class="container">
+        <form method="POST" action="/add">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Enter Course Name :</label>
+                <input name="courseName" type="text" class="form-control course-name" id="exampleFormControlInput1" placeholder="Enter Here ...">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Enter Coures Description : </label>
+                <textarea name="description" placeholder="Enter Here ..." class="form-control course-description" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="split">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Enter Course ID :</label>
+                    <input name="id" type="number" class="form-control course-id" id="exampleFormControlInput1" placeholder="Enter Here ...">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Enter Course Duration :</label>
+                    <input type="number" class="form-control course-duration" id="exampleFormControlInput1" name="duration" placeholder="Enter Here ... (Hours)">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Enter Course Cost :</label>
+                    <input name="cost" type="number" class="form-control course-cost" id="exampleFormControlInput1" placeholder="Enter Here ... (INR)">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success add">Add +</button>
+            <a href="view"><button type="button" class="btn btn-secondary">View All</button></a>
+
+        </form>
+       
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
